@@ -1,6 +1,7 @@
 from django.shortcuts import get_object_or_404
 
 from rest_framework.response import Response
+from rest_framework_simplejwt.views import TokenObtainPairView
 from rest_framework import generics
 from rest_framework.views import APIView
 from rest_framework import viewsets
@@ -17,13 +18,37 @@ class LoginViewSet(viewsets.ModelViewSet):
     serializer_class = UserSerializer
 
     def post(self, request):
-        password = request.data['account-password']
-        account_id = request.data['account-id']
+        email = request.data['email']
+        password = request.data['password']
 
-        return Response({
-            'password': password,
-            'acount_id': account_id,
-        })
+        try :
+            # getting email
+            user_email = Email.objects.get(email=email)
+
+            # getting user as the email foreign
+            user = User.objects.get(id=email.user)
+
+            # getting the password
+            user_password = Password.objects.get(user=user.id)
+
+            if check_password(password, user_password):
+                token = TokenSerializer.get_token(user.id)
+                # success login
+                return Response(
+                    {
+                        'user data' :  user.data,
+                        'token': token
+                    }
+                )
+
+            else:
+                # wrong password
+                return Response(
+                    'Wrong password'
+                )
+
+        except Email.DoesNotExist:
+            return Response('Email does not exists')
 
 
 class UserViewSet(viewsets.ModelViewSet):
