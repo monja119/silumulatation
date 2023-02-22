@@ -5,6 +5,7 @@ import Signup from './components/Signup';
 import Home from './components/Home';
 import Error from './components/Error';
 import GetDataUser from './Datas/getData_User';
+import User from './components/User';
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
             <Route index element={<Home />}></Route>
             <Route path="login" element={<Login/>}></Route>
             <Route path="register" element={<Signup/>}></Route>
+            <Route path="user" element={<User/>}></Route>
             <Route path="userAffichage" element={<GetDataUser/>}></Route>
             <Route path="*" element={<Error/>}></Route>
 

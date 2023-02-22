@@ -11,12 +11,14 @@ class GetDataUser extends React.Component {
 
   componentDidMount() {
     const xhr = new XMLHttpRequest();
-    xhr.open('GET', 'https://aff8-197-149-28-14.eu.ngrok.io', true);
+    xhr.open('GET', 'https://aff8-197-149-28-14.eu.ngrok.io/user/', true);
+    xhr.withCredentials = true;
     //xhr.open('GET', 'aff8-197-149-28-14.eu.ngrok.io/user/', true);
     xhr.onload = () => {
       if (xhr.status === 200) {
         const userData = JSON.parse(xhr.responseText);
         this.setState({ userData });
+        console.log(userData)
       } else {
         this.setState({ error: xhr.statusText });
       }
@@ -25,6 +27,11 @@ class GetDataUser extends React.Component {
       this.setState({ error: 'Une erreur est survenue lors de la requête.' });
     };
     xhr.send();
+  }
+
+  getData()
+  {
+    return userData
   }
 
   render() {
