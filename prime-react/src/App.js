@@ -4,6 +4,7 @@ import Login from './components/Login';
 import Signup from './components/Signup';
 import Home from './components/Home';
 import Error from './components/Error';
+import GetDataUser from './Datas/getData_User';
 
 function App() {
 
@@ -13,7 +14,8 @@ function App() {
           <Route path='/'>
             <Route index element={<Home />}></Route>
             <Route path="login" element={<Login/>}></Route>
-            <Route path="Signup" element={<Signup/>}></Route>
+            <Route path="register" element={<Signup/>}></Route>
+            <Route path="user" element={<GetDataUser/>}></Route>
             <Route path="*" element={<Error/>}></Route>
 
           </Route>

@@ -19,7 +19,7 @@ class Login extends Component
                   <div className="card-body login-card-body">
                     <p className="je justify-content-center">Gestion des absences</p>
                     <p className="login-box-msg">Sign in to start your session</p>
-                    <form action="https://2e1b-154-126-98-66.eu.ngrok.io/login/" method="post">
+                    <form action="https://d0ca-154-126-98-66.eu.ngrok.io/login/" method="post">
                       <div className="input-group mb-3">
                         <input type="email" name='email' className="form-control" placeholder="Email" />
                       </div>

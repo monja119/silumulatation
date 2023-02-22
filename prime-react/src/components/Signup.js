@@ -19,7 +19,7 @@ class Signup extends Component {
               <div className="card-body register-card-body">
                 <p className="login-box-msg">Register a new membership</p>
           
-                <form action="../../index.html" method="post">
+                <form action="https://d0ca-154-126-98-66.eu.ngrok.io/register/" method="post">
                   <div className="input-group mb-3">
                     <input type="text" name='name' className="form-control" placeholder="Name"/>
                     
