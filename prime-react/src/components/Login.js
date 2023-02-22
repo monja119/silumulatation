@@ -52,4 +52,21 @@ class Login extends Component
                       </a>
                     </div>
                     {/* /.social-auth-links */}
- 
+                    <p className="mb-1">
+                      <a href="forgot-password.html">I forgot my password</a>
+                    </p>
+                    <p className="mb-0">
+                      <a href="register.html" className="text-center">Register a new membership</a>
+                    </p>
+                  </div>
+                  {/* /.login-card-body */}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>)
+    }
+
+}
+export default Login;
