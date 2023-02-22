@@ -29,6 +29,20 @@ class Signup extends Component {
                     
                   </div>
                   
+                    
+                  </div>
+                  <div className="input-group mb-3">
+                    <input type="text" name='niveau'className="form-control" placeholder="Niveau"/>
+                    
+                  </div>    
+                    
+                  </div>
+                  <div className="input-group mb-3">
+                    <input type="image" name='image'className="form-control" src="" alt=""/>
+                    
+                  </div>
+    
+    
                   <div className="input-group mb-3">
                     <input type="email" name='email' className="form-control" placeholder="Email"/>
                   
