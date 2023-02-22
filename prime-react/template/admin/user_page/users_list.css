@@ -1,0 +1,29 @@
+.tab{
+    padding-top: 2% ;
+}
+
+.data-head{
+    font-weight: 500;
+}
+
+.tab-head, .tab-body {
+    display: flex;
+}
+
+.data{
+    width: 15em;
+    text-align: center;
+}
+
+.tab-scroll{
+    width: 50em;
+    height: 30em;
+    display: block;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+
+
+
+
