@@ -11,7 +11,7 @@ class GetDataUser extends React.Component {
 
   componentDidMount() {
     const xhr = new XMLHttpRequest();
-    xhr.open('GET', 'https://d0ca-154-126-98-66.eu.ngrok.io/user/');
+    xhr.open('GET', 'aff8-197-149-28-14.eu.ngrok.io/user/');
     xhr.onload = () => {
       if (xhr.status === 200) {
         const userData = JSON.parse(xhr.responseText);
