@@ -16,8 +16,7 @@ class App extends Component {
     super(props)
 
     this.state = {
-      userData: null,
-      userType: null
+      userData: null
     };
   }
 
@@ -35,26 +34,15 @@ class App extends Component {
             
         }
         xhr.send();
-        const xhr2 = new XMLHttpRequest();
-        xhr2.open('GET', 'https://c8f3-154-126-79-169.eu.ngrok.io/get_account_type/', true);
-        xhr2.withCredentials = true;
-        xhr2.onload = () => {
-            
-            const userData = JSON.parse(xhr.responseText);
-            this.setState({ userType });
-            
-        }
-        xhr2.send();
   }
   render() {
     const { userData } = this.state;
-    const { userType } = this.state;
-        if (!userData && !userType) {
+        if (!userData) {
             return <div className="d-flex justify-content-center align-items-center vh-100">
             <Spinner animation="border" variant="primary" />
           </div>; // Ou un autre élément d'affichage pendant le chargement
         }
-        console.log(userData, userType)
+        console.log(userData)
         if(userData.id === undefined || userData.id === null)
         {
           return (
