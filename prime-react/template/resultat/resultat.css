@@ -1,0 +1,39 @@
+.scroll-result{
+    margin: 15px 15px;
+    height: 38em;
+    display: block;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.result{
+    display: flex;
+    justify-content: space-between;
+    height: 4em;
+    margin: 5px 0 5px 5em;
+    width: 75em;
+    background-color: none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    list-style: none;
+    
+}
+
+.photo{
+    margin: 12px 10px 0 12px;
+    width: 40px;
+    height: 40px;
+}
+
+span{
+    padding-top: 1.3em;
+}
+
+.btn-profil{
+    border-radius: 5px;
+    color: #fff;
+    border-style: none;
+    background-color: rgb(34, 91, 155);
+    margin: .9em 1.3em 0 0;
+    height: 2.5em;
+    width: 7em;
+}

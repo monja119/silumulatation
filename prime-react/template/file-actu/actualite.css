@@ -1,0 +1,30 @@
+.interet{
+    background-color: #fff;
+    border: 1px solid rgb(58, 132, 216);
+    border-radius: 5px;
+    color: rgb(58, 132, 216);
+    font-weight: 500;
+    width: 6em;
+    height: 2em;
+    margin: 0px 20px 20px 0;
+}
+
+
+.card{
+    max-width: 37em;  
+    margin: 2em 0 0 0;  
+}
+
+.actu-content{
+    padding-left: 27%;
+    height: 38.50em;
+    display: block;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.user-photo{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
