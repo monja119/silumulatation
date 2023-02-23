@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import Navbar from "./Navbar/Navbar";
+import Recherche from "./Recherche/Recherche";
 
 export default class Principale extends Component
 {
@@ -15,6 +16,7 @@ export default class Principale extends Component
         return (
         <div className="Navbar">
             <Navbar />            
+            <Recherche />            
         </div>
         )
 
