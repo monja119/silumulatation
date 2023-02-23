@@ -14,7 +14,7 @@ export default class Navbar extends Component
 
         return (
         <div className="Navbar">
-            Navbar
+            Navbar Salut
         </div>
         )
 
