@@ -1,0 +1,32 @@
+.recherche{
+    padding: 1em 0 0 16em ;
+}
+
+input{
+    width: 30em;
+    border-radius: 20px;
+    border: 1px solid #999;
+    color: #2e2c2c;
+    padding-left: 10px;
+}
+
+#recherche{
+    width: 30px;
+    height: 30px;
+}
+
+.notifs{
+    padding-top: 1em;
+}
+
+#notf-btn{
+    background-color: #fff;
+    padding-top: 2px;
+    border: none;
+    border-radius: 20px;
+}
+
+#notif-content{
+    padding-left: 7em;
+}
+
