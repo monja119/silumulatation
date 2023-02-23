@@ -1,6 +1,5 @@
 .menu{
-    background: rgb(34,193,195);
-    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(0,91,234,1) 100%); 
+    background-color: rgb(34, 91, 155);
 }
 
 #etudiant-part{
@@ -17,4 +16,8 @@
 .options{
     background-color: #ffffff23;
     border-radius: 5px;
+}
+
+.board{
+    height: 655px;
 }
