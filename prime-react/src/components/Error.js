@@ -19,7 +19,7 @@ class Error extends Component
                     </div>
                     <div className="row">
                         <p>
-                            We could not find the page " { window.location.href } "you were looking for.
+                            We could not find the page "{ window.location.href }" you were looking for.
                             Meanwhile, you may <Link to="/" className="text-decoration-none">return to homepage</Link>
                         </p>
                     </div> 
