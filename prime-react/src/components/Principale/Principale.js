@@ -15,8 +15,7 @@ export default class Principale extends Component
 
         return (
         <div className="Navbar">
-            <Navbar />            
-            <Recherche />            
+            <Navbar />               
         </div>
         )
 

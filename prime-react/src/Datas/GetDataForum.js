@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Spinner } from 'react-bootstrap';
 
 export default class GetDataForum extends React.Component {
   constructor(props) {
@@ -43,7 +44,9 @@ export default class GetDataForum extends React.Component {
     }
 
     if (!userData) {
-      return <div>Chargement en cours...</div>;
+      return <div className="d-flex justify-content-center align-items-center vh-100">
+      <Spinner animation="border" variant="primary" />
+    </div>; 
     }
 
     return (

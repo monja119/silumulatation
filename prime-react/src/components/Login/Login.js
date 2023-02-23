@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import {BackLink} from "../../BackLink";
+import PreSignup from "../Signup/PreSignup";
+import Signup from "../Signup/Signup";
 import "./Login.css";
 
 export default class Login extends Component {
@@ -14,7 +15,7 @@ export default class Login extends Component {
 		<div class="sign_box">
 			<div class="left">
 				<div class="contact">
-					<form action="https://c8f3-154-126-79-169.eu.ngrok.io/login/" method="post">
+					<form action="https://c8f3-154-126-79-169.eu.ngrok.io/login/" method="post" prevent>
 						<h1>Bienvenu</h1>
 						<input type="email" name="email" placeholder="Example@esti.mg" required/>
                         <input type="password" name="password" placeholder="mot de passe" required/>
@@ -31,6 +32,9 @@ export default class Login extends Component {
 			</div>
 		</div>
 	</section>
+    <PreSignup/>
+    <Signup/>
+
       </div>
     );
   }
