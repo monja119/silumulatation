@@ -1,3 +1,7 @@
 .submit-btn{
     padding-left: 76em;
 }
+
+#compose-textarea{
+    height: 300px;
+}
