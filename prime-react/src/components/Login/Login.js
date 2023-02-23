@@ -26,7 +26,7 @@ export default class Login extends Component {
 			</div>
 			<div class="right">
 				<div class="image">
-                    <img src="index.jpeg" alt=""/>
+                    <img src="./img/Esti-logo.png" alt=""/>
                 </div>
 			</div>
 		</div>
