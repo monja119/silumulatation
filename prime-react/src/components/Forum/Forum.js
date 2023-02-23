@@ -20,7 +20,7 @@ export default class Forum extends Component
 
         //get Forum Data
         const xhr = new XMLHttpRequest();
-        xhr.open('GET', 'https://c8f3-154-126-79-169.eu.ngrok.io/forum', true);
+        xhr.open('GET', 'https://c8f3-154-126-79-169.eu.ngrok.io/forum/', true);
         xhr.withCredentials = true;
         xhr.onload = () => {
             

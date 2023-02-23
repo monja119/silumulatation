@@ -11,7 +11,7 @@ export default class GetDataForum extends React.Component {
 
   componentDidMount() {
     const xhr = new XMLHttpRequest();
-    xhr.open('GET', 'https://c8f3-154-126-79-169.eu.ngrok.io/forum', true);
+    xhr.open('GET', 'https://c8f3-154-126-79-169.eu.ngrok.io/forum/', true);
     xhr.withCredentials = true;
     //xhr.open('GET', 'aff8-197-149-28-14.eu.ngrok.io/user/', true);
     xhr.onload = () => {

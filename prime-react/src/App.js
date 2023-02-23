@@ -6,7 +6,6 @@ import Profile from './components/Profile/Profile';
 import Principale from "./components/Principale/Principale";
 import Forum from './components/Forum/Forum';
 import GetDataForum from './Datas/GetDataForum';
-
 function App() {
 
 
