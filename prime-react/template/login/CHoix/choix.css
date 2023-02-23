@@ -1,0 +1,102 @@
+.login * {
+  padding: 0px;
+  margin: 0px;
+  font-family: "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+.login .signent-up {
+  height: 1000px;
+  width: 100%;
+  background-color: white;
+  position: relative;
+}
+.login .login_box {
+  width: 1050px;
+  height: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 10px 40px -8px rgba(0, 0, 0, 0.2666666667);
+  display: flex;
+  overflow: hidden;
+}
+.login .login_box .left {
+  width: 41%;
+  height: 100%;
+  padding: 25px 25px;
+}
+.login .login_box .right {
+  width: 59%;
+  height: 100%;
+}
+.login .left .contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  height: 100%;
+  width: 73%;
+  margin: auto;
+}
+.login .left h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 30px;
+}
+.login .left input {
+  border: none;
+  width: 80%;
+  margin: 15px 0px;
+  padding: 7px 9px;
+  width: 100%;
+  overflow: hidden;
+  background: transparent;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.login .left {
+  background: linear-gradient(-45deg, #dcd7e0, #fff);
+}
+
+.login .contact button {
+  border: none;
+  padding: 15px 70px;
+  border-radius: 8px;
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  background: #d86417;
+  color: #fff;
+  font-weight: bold;
+}
+.login .contact span{
+  font-size: 20px;
+  margin-top: 50px;
+  margin-left: 40px;
+}
+.login .lettre {
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 29%;
+  font-size: 20px;
+}
+.login .right {
+  background: white;
+  color: #fff;
+  position: relative;
+}
+.login .right .image {
+  position: absolute;
+  width: 150px;
+  height: 50px;
+  background: rgba(29, 46, 194, 0);
+  left: 40%;
+  top: 40%;
+  bottom: 70px;
+  transform: translate(-50%, 0%);
+}/*# sourceMappingURL=entreprise.css.map */
