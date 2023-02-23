@@ -1,11 +1,9 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Login from './components/Login';
-import Signup from './components/Signup';
-import Home from './components/Home';
 import Error from './components/Error';
-import GetDataUser from './Datas/getData_User';
-import User from './components/User';
+import Login from './components/Login/Login';
+import Profile from './components/Profile/Profile';
+import Principale from "./components/Principale/Principale"
 
 function App() {
 
@@ -15,9 +13,8 @@ function App() {
           <Route path='/'>
             <Route index element={<Home />}></Route>
             <Route path="login" element={<Login/>}></Route>
-            <Route path="register" element={<Signup/>}></Route>
-            <Route path="user" element={<User/>}></Route>
-            <Route path="userAffichage" element={<GetDataUser/>}></Route>
+            <Route path="profile" element={<Profile/>}></Route>
+            <Route path="home" element={<Principale/>}></Route>
             <Route path="*" element={<Error/>}></Route>
 
           </Route>
